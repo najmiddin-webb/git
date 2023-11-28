@@ -3,9 +3,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Logo from "../public/Remove-bg.ai_1701116393719 (1).png"
-import { ToastContainer, toast } from 'react-toastify';
-
-import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,8 +29,6 @@ export default function RootLayout({ children }) {
           <div className="mt-8">
             {children}
           </div>
-          <ToastContainer />
-
         </div>
       </body>
     </html>
