@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
           {/* <Navbar /> */}
           <div className="flex items-end justify-center">
             <center className="text-white">
-              <h1 className="text-white text-2xl">DIN ISHLARI BO'YICHA QO'MITA</h1>
-              <p className="mb-5">Ўзбекистон Республикаси Олий суди томонидан экстремизм ва терроризм ғоялари билан йўғрилган деб топилган Ўзбекистон Республикаси ҳудудига олиб кириш, тайёрлаш, тарқатиш ва намойиш этиш тақиқланган материаллар рўйхати (2023 йил 17 май ҳолатига кўра)</p>
+              <h1 className="text-white text-2xl">DIN ISHLARI BO`YICHA QO`MITA</h1>
+              <p>O`zbekiston Respublikasi Oliiy sudi tomonidan ekstremizm va terrozizm g`yalari bilan yo`g`irilgan deb O`zbekiston Respublikasi hududiga olib kirish,tayyorlash,tarqatish va namoyish etish taqiqlangan materiallar ro`yxati (2023 yil 17 may)</p>
             </center>
           </div>
           <div className="flex justify-center">
