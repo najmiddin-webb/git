@@ -15,19 +15,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="max-w-7xl mx-auto p-4">
-          {/* <Navbar /> */}
-          <div className="flex items-end justify-center">
-            <center className="text-white">
-              <h1 className="text-white text-2xl">DIN ISHLARI BO`YICHA QO`MITA</h1>
-              <p>O`zbekiston Respublikasi Oliiy sudi tomonidan ekstremizm va terrozizm g`yalari bilan yo`g`irilgan deb O`zbekiston Respublikasi hududiga olib kirish,tayyorlash,tarqatish va namoyish etish taqiqlangan materiallar ro`yxati (2023 yil 17 may)</p>
+        <div className="main_div">
+          <div className="max-w-7xl mx-auto p-4 ">
+            {/* <Navbar /> */}
+            <div className="flex items-end justify-center">
+            </div>
+            <div className="mt-8">
+              {children}
+            </div>
+            <center className="text-white mt-10">
+              <h1 className="text-white text-4xl">DIN ISHLARI BO`YICHA QO`MITA</h1>
+              <p>O`zbekiston Respublikasi Oliy sudi tomonidan ekstremizm va terrozizm g`oyalari bilan yo`g`irilgan deb O`zbekiston Respublikasi hududiga olib kirish,tayyorlash,tarqatish va namoyish etish taqiqlangan materiallar ro`yxati (2023 yil 17 may)</p>
             </center>
-          </div>
-          <div className="flex justify-center">
-            <Image className="w-32 md:w-40 object-cover" src={Logo} width={150} height={100} />
-          </div>
-          <div className="mt-8">
-            {children}
           </div>
         </div>
       </body>

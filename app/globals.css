@@ -10,7 +10,23 @@
 @tailwind utilities;
 
 body {
-    background: #182E44;
+    /* background: #182E44; */
+    background: url("/prokuratura-Daryo-3.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_div {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .8);
+    width: 100%;
+    height: 100vh;
 }
 
 .active {

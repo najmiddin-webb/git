@@ -16,6 +16,7 @@ const Filter = () => {
   const [hide, setHide] = useState(false);
   const [initialLoad, setInitialLoad] = useState(true);
 
+
   const alertFunction = () => {
     alert("Bu malumot havfli")
   };
@@ -42,6 +43,10 @@ const Filter = () => {
 
     fetchData();
   }, []);
+
+  const handleFunction = () => {
+    console.log("Mavzular yuklanishda")
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -122,7 +127,7 @@ const Filter = () => {
               <div className="" key={date}>
                 {usersAddedByDate[date].filter((t) => filterStatus === null ? true : t.isChecked === filterStatus).map((t, index) => (
                   <div key={t.id} className="w-full">
-                    <div className="mb-3">
+                    <div className="mb-3" onClick={handleFunction}>
                       <div className="text-xl md:text-2xl font-bold lg:text-3xl text-black">{highlightText(t.turi, filterValue.malumot)}</div>
                       <p className="text-[14px] line-clamp-1 md:text-xl lg:text-[22px]">{highlightText(t.malumot, filterValue.malumot)}</p>
                     </div>
