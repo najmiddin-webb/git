@@ -3,6 +3,9 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Logo from "../public/Remove-bg.ai_1701116393719 (1).png"
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +20,20 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="max-w-7xl mx-auto p-4">
           {/* <Navbar /> */}
+          <div className="flex items-end justify-center">
+            <center className="text-white">
+              <h1 className="text-white text-2xl">DIN ISHLARI BO'YICHA QO'MITA</h1>
+              <p className="mb-5">Ўзбекистон Республикаси Олий суди томонидан экстремизм ва терроризм ғоялари билан йўғрилган деб топилган Ўзбекистон Республикаси ҳудудига олиб кириш, тайёрлаш, тарқатиш ва намойиш этиш тақиқланган материаллар рўйхати (2023 йил 17 май ҳолатига кўра)</p>
+            </center>
+          </div>
           <div className="flex justify-center">
             <Image className="w-32 md:w-40 object-cover" src={Logo} width={150} height={100} />
           </div>
           <div className="mt-8">
             {children}
           </div>
+          <ToastContainer />
+
         </div>
       </body>
     </html>

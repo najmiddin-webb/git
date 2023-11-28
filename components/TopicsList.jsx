@@ -14,6 +14,7 @@ const Filter = () => {
     malumot: "",
   });
   const [hide, setHide] = useState(false);
+  const [initialLoad, setInitialLoad] = useState(true);
 
   const alertFunction = () => {
     alert("Bu malumot havfli")
@@ -74,6 +75,7 @@ const Filter = () => {
     );
 
     setFilteredMavzula(filteredArray);
+    setInitialLoad(false); // Set initialLoad to false after filtering
   };
 
   const [filterStatus, setFilterStatus] = useState(null);
@@ -114,11 +116,11 @@ const Filter = () => {
           </div>
         </div>
         <div className="p-5">
-          {Object.keys(usersAddedByDate)
+          {!initialLoad && Object.keys(usersAddedByDate)
             .reverse()
             .map((date, index) => (
               <div className="" key={date}>
-                {usersAddedByDate[date].filter((t) => filterStatus === null ? true : t.isChecked === filterStatus).slice(0, 20).map((t, index) => (
+                {usersAddedByDate[date].filter((t) => filterStatus === null ? true : t.isChecked === filterStatus).map((t, index) => (
                   <div key={t.id} className="w-full">
                     <div className="mb-3">
                       <div className="text-xl md:text-2xl font-bold lg:text-3xl text-black">{highlightText(t.turi, filterValue.malumot)}</div>
@@ -126,14 +128,13 @@ const Filter = () => {
                     </div>
                   </div>
                 ))}
-                {usersAddedByDate[date].length === 0 && (
-                  <h1>Malumotlar yuklanmoqda....</h1>
-                )}
+
+                {initialLoad && <h1>Malumotlar yuklanmoqda....</h1>}
               </div>
             ))}
 
 
-          {Object.keys(usersAddedByDate).length === 0 && (
+          {!initialLoad && Object.keys(usersAddedByDate).length === 0 && (
             <h1>Siz qidiruv maydonida izlagan <b> {filterValue.malumot}</b> qora ro`yxatimizdan topilmadi </h1>
           )}
         </div>

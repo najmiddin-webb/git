@@ -27,7 +27,8 @@ export default function AddTopic() {
       });
 
       if (res.ok) {
-        router.push("/");
+        alert("Qoshildi")
+
       } else {
         throw new Error("Failed to create a topic");
       }
@@ -47,6 +48,7 @@ export default function AddTopic() {
         <option>You Tube</option>
         <option>OK.ru</option>
         <option>Tik Tok</option>
+        <option>Kitoblar</option>
         <option>Turli xil saytlar</option>
       </select>
 
