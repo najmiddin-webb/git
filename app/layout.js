@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto p-4 ">
             {/* <Navbar /> */}
             <div className="flex items-end justify-center"></div>
-            <h1 className="text-[16px] mb-10 md:text-xl text-white text-center border-2 rounded-xl border-red-600 py-3">
+            <h1 className="text-[16px] mb-10 md:text-xl text-white text-center rounded-xl border-red-600">
               <center>
                 <CiWarning className="text-5xl text-red-500 mb-2 animation" />
               </center>
