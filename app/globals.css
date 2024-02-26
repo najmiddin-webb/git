@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Poppins', sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @tailwind base;
@@ -10,38 +10,39 @@
 @tailwind utilities;
 
 body {
-    /* background: #182E44; */
-    background: url("/prokuratura-Daryo-3.jpg");
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  /* background: #182E44; */
+  background: url("/prokuratura-Daryo-3.jpg");
+  width: 100%;
+  height: 500vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .main_div {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0, .8);
-    width: 100%;
-    height: 100vh;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  height: 500vh;
 }
 
 .active {
-    /* background: #EDF3FC; */
-    color: red;
+  /* background: #EDF3FC; */
+  color: red;
 }
 
 .filter {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #182e4432;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #182e4432;
 }
 
 input {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }

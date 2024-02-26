@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import Logo from "../public/Remove-bg.ai_1701116393719 (1).png"
+import Logo from "../public/Remove-bg.ai_1701116393719 (1).png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +18,25 @@ export default function RootLayout({ children }) {
         <div className="main_div">
           <div className="max-w-7xl mx-auto p-4 ">
             {/* <Navbar /> */}
-            <div className="flex items-end justify-center">
-            </div>
-            <div className="mt-8">
-              {children}
-            </div>
+            <div className="flex items-end justify-center"></div>
+            <h1 className="text-[16px] md:text-xl text-white text-center border-2 rounded-xl border-red-600 py-3 ">
+              Taqiqlangan diniy mazmundagi materiallarni tayyorlash, saqlash,
+              tarqatish va namoyish etish Jinoyat kodeksining 244¹-moddasiga
+              asosan <b>5</b> yildan <b>8 </b>yilgacha ozodlikdan maxrum qilish
+              bilan jazolanadi
+            </h1>
+            <div className="mt-8">{children}</div>
             <center className="text-white mt-10">
-              <h1 className="text-white text-4xl">DIN ISHLARI BO`YICHA QO`MITA</h1>
-              <p>O`zbekiston Respublikasi Oliy sudi tomonidan ekstremizm va terrozizm g`oyalari bilan yo`g`irilgan deb O`zbekiston Respublikasi hududiga olib kirish,tayyorlash,tarqatish va namoyish etish taqiqlangan materiallar ro`yxati (2023 yil 17 may)</p>
+              <h1 className="text-white text-4xl">
+                DIN ISHLARI BO`YICHA QO`MITA
+              </h1>
+              <p>
+                O`zbekiston Respublikasi Oliy sudi tomonidan ekstremizm va
+                terrozizm g`oyalari bilan yo`g`irilgan deb O`zbekiston
+                Respublikasi hududiga olib kirish,tayyorlash,tarqatish va
+                namoyish etish taqiqlangan materiallar ro`yxati (2023 yil 17
+                may)
+              </p>
             </center>
           </div>
         </div>
