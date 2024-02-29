@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
               <center>
                 <CiWarning className="text-5xl text-red-500 mb-2 animation" />
                 <h1 className="text-2xl">DIQQAT</h1>
+                Yangilandi
               </center>
               Taqiqlangan diniy mazmundagi materiallarni tayyorlash, saqlash,
               tarqatish va namoyish etish Jinoyat kodeksining{" "}
