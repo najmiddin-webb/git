@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import Logo from "../public/Remove-bg.ai_1701116393719 (1).png";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { CiWarning } from "react-icons/ci";
 import Link from "next/link";
 
@@ -40,6 +40,15 @@ export default function RootLayout({ children }) {
               </Link>
             </center>
             <div className="mt-5">{children}</div>
+            <div className="flex items-center justify-center mt-20">
+              <Link
+                href={
+                  "https://www.youtube.com/watch?v=I8vX27K1fYM&feature=youtu.be"
+                }
+              >
+                <MdOutlineSlowMotionVideo className="icon" />
+              </Link>
+            </div>
           </div>
         </div>
       </body>
