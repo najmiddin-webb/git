@@ -40,11 +40,7 @@ export default function RootLayout({ children }) {
             <center></center>
             <div className="mt-5">{children}</div>
             <div className="flex items-center justify-center mt-20">
-              <Link
-                href={
-                  "https://www.youtube.com/watch?v=I8vX27K1fYM&feature=youtu.be"
-                }
-              >
+              <Link href={"https://www.youtube.com/watch?v=ySBlCOMxjIs"}>
                 <MdOutlineSlowMotionVideo className="icon" />
               </Link>
             </div>
