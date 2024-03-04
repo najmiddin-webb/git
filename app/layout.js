@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
               Taqiqlangan diniy mazmundagi materiallarni tayyorlash, saqlash,
               tarqatish va namoyish etish Jinoyat kodeksining{" "}
               <Link
-                href={"https://lex.uz/uz/ "}
+                href={"https://old.lex.uz/m/acts/111453"}
                 className="text-blue-600 underline"
               >
                 244¹-moddasiga {""}
