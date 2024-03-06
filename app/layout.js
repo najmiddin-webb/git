@@ -45,6 +45,11 @@ export default function RootLayout({ children }) {
                 <MdOutlineSlowMotionVideo className="icon" />
               </Link>
             </div>
+            <div className="flex justify-center mt-2 text-2xl underline text-white">
+              <Link href="https://sud.uz/wp-content/uploads/2024/02/Taqiqlangan%20saytlar.pdf">
+                Taqiqlangan Diniy saytlar ro`yxati
+              </Link>
+            </div>
           </div>
         </div>
       </body>
