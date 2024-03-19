@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
               </Link>
             </div>
             <div className="flex justify-center mt-2 text-2xl underline text-white">
-              <Link href="https://sud.uz/wp-content/uploads/2024/02/Taqiqlangan%20saytlar.pdf">
+              <Link href="https://drive.google.com/file/d/1Hs73K77-ocbQXRafKEYpPFhm5CHskHAH/view?usp=drivesdk">
                 Taqiqlangan Diniy saytlar ro`yxati
               </Link>
             </div>
