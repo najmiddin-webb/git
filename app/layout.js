@@ -42,14 +42,13 @@ export default function RootLayout({ children }) {
                 <MdOutlineSlowMotionVideo className="icon" />
               </Link>
             </div>
-            <div className="flex justify-center mt-2 text-2xl underline text-white">
+            <div className="flex justify-center mt-2 text-xl md:text-2xl underline text-white">
               <Link href="https://drive.google.com/file/d/1Hs73K77-ocbQXRafKEYpPFhm5CHskHAH/view">
                 Taqiqlangan Diniy saytlar ro`yxati
               </Link>
             </div>
-
           <div>
-            <h1 className='text-white text-center flex justify-center mt-5 md:mt-60 md:text-2xl text-xl'>
+            <h1 className='text-white text-center flex justify-center mt-5 md:mt-60 md:text-2xl text-[15px]'>
                   Bu turdagi taqiqlangan materiallar boshqa ijtimoiy internet tarmoqlarida ham tarqatilgan bo`lishi mumkin.
             </h1>
           </div>
