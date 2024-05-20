@@ -1,10 +1,8 @@
-import Navbar from "@/components/Navbar";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import Image from "next/image";
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
-import { CiWarning } from "react-icons/ci";
-import Link from "next/link";
+import { Inter } from "next/font/google"
+import Link from "next/link"
+import { CiWarning } from "react-icons/ci"
+import { MdOutlineSlowMotionVideo } from "react-icons/md"
+import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +23,7 @@ export default function RootLayout({ children }) {
               <center>
                 <CiWarning className="text-5xl text-red-500 mb-2 animation" />
                 <h1 className="text-2xl">DIQQAT</h1>
-                Yangilandi
-              </center>
+                </center>
               Taqiqlangan diniy mazmundagi materiallarni tayyorlash, saqlash,
               tarqatish va namoyish etish Jinoyat kodeksining{" "}
               <Link
@@ -50,6 +47,13 @@ export default function RootLayout({ children }) {
                 Taqiqlangan Diniy saytlar ro`yxati
               </Link>
             </div>
+
+          <div>
+            <h1 className='text-white text-center flex justify-center mt-5 md:mt-60 md:text-2xl text-xl'>
+                  Bu turdagi taqiqlangan materiallar boshqa ijtimoiy internet tarmoqlarida ham tarqatilgan bo`lishi mumkin.
+            </h1>
+          </div>
+
           </div>
         </div>
       </body>
