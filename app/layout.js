@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
               </Link>
             </div>
           <div>
-            <h1 className='text-white text-center flex justify-center mt-6 md:mt-60 md:text-2xl text-[15px]'>
+            <h1 className='text-white text-center flex justify-center mt-6 md:mt-52 md:text-2xl text-[15px]'>
                   Bu turdagi taqiqlangan materiallar boshqa ijtimoiy internet tarmoqlarida ham tarqatilgan bo`lishi mumkin.
             </h1>
           </div>
